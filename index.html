@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A simple, clean one-page website." />
+    <title>Easy Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Easy Website</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+          <a class="button small" href="#contact">Get in touch</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Simple • Fast • Clean</p>
+            <h1>Launch a small website in minutes.</h1>
+            <p class="lead">
+              This is a lightweight one-page site you can edit easily: change text, colors, and links—no setup needed.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#features">See features</a>
+              <a class="button ghost" href="#about">Learn more</a>
+            </div>
+            <div class="hero-stats" role="list" aria-label="Highlights">
+              <div class="stat" role="listitem">
+                <div class="stat-num">1</div>
+                <div class="stat-label">page</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat-num">0</div>
+                <div class="stat-label">dependencies</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat-num">A+</div>
+                <div class="stat-label">accessible</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Preview card">
+            <div class="card">
+              <div class="card-top">
+                <div class="dot red" aria-hidden="true"></div>
+                <div class="dot yellow" aria-hidden="true"></div>
+                <div class="dot green" aria-hidden="true"></div>
+                <div class="card-title">Your Website</div>
+              </div>
+              <div class="card-body">
+                <div class="skeleton line w80"></div>
+                <div class="skeleton line w95"></div>
+                <div class="skeleton line w70"></div>
+                <div class="skeleton block"></div>
+                <div class="skeleton line w60"></div>
+                <div class="pill-row" aria-hidden="true">
+                  <span class="pill">Clean</span>
+                  <span class="pill">Responsive</span>
+                  <span class="pill">Editable</span>
+                </div>
+              </div>
+            </div>
+            <p class="hint">Tip: Edit the text in <code>index.html</code>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container two-col">
+          <div>
+            <h2>About</h2>
+            <p>
+              This site is just HTML + CSS + a small JavaScript file. You can host it anywhere (GitHub Pages, Netlify,
+              or just open the file in your browser).
+            </p>
+            <ul class="checklist">
+              <li>Fast to load</li>
+              <li>Looks good on mobile and desktop</li>
+              <li>Easy to customize</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Quick customization</h3>
+            <p class="muted">Common edits:</p>
+            <div class="codebox" role="group" aria-label="Edit ideas">
+              <div><span class="tag">Title</span> Change “Easy Website”</div>
+              <div><span class="tag">Colors</span> Edit CSS variables</div>
+              <div><span class="tag">Links</span> Update navigation & buttons</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="features">
+        <div class="container">
+          <div class="section-head">
+            <h2>Features</h2>
+            <p class="muted">A few nice touches, without complexity.</p>
+          </div>
+
+          <div class="grid">
+            <article class="feature">
+              <h3>Modern layout</h3>
+              <p>Clean typography, spacing, and a soft gradient background.</p>
+            </article>
+            <article class="feature">
+              <h3>Responsive</h3>
+              <p>Works well on phones, tablets, and desktops.</p>
+            </article>
+            <article class="feature">
+              <h3>Accessible</h3>
+              <p>Good contrast, focus states, and a “skip to content” link.</p>
+            </article>
+            <article class="feature">
+              <h3>Contact form</h3>
+              <p>A simple form with validation and a friendly “sent” message (no backend needed).</p>
+            </article>
+            <article class="feature">
+              <h3>Smooth scrolling</h3>
+              <p>Navigation links glide to sections for a nicer feel.</p>
+            </article>
+            <article class="feature">
+              <h3>Easy hosting</h3>
+              <p>Drop the folder anywhere and deploy as static files.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container two-col">
+          <div>
+            <h2>Contact</h2>
+            <p class="muted">Fill this out and you’ll see a “message sent” confirmation.</p>
+            <div class="contact-cards">
+              <div class="mini-card">
+                <div class="mini-label">Email</div>
+                <a class="mini-value" href="mailto:hello@example.com">hello@example.com</a>
+              </div>
+              <div class="mini-card">
+                <div class="mini-label">Location</div>
+                <div class="mini-value">Your City</div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" id="contact-form" novalidate>
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                minlength="10"
+                placeholder="How can I help?"
+              ></textarea>
+            </label>
+            <button class="button" type="submit">Send message</button>
+            <p class="form-note muted">
+              No backend configured—this is a demo confirmation only.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Easy Website. All rights reserved.</p>
+        <a href="#top" class="back-to-top">Back to top</a>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
